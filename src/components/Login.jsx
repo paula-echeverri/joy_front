@@ -1,17 +1,15 @@
 import React from "react";
 import "./LoginForm.css";
-
 import { useState } from "react";
 
 const Login = () => {
-
   //check if it is possible to creat only use State for every data
-  const [email, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleUsernameChange = (event) => {
     console.log(event.target.value);
-    setUsername(event.target.value);
+    setEmail(event.target.value);
   };
 
   const handlePasswordChange = (event) => {
@@ -20,12 +18,10 @@ const Login = () => {
   };
 
   const handleSubmit = (event) => {
-
     //call api backend
     event.preventDefault();
-    console.log('event', email)
-    
-    console.log('event', password)
+    console.log("event", email);
+    console.log("event", password);
   };
 
   return (
@@ -58,7 +54,7 @@ const Login = () => {
         </p>
 
         <label className="forgot-password" href="#">
-          Forget your <a href="#">password?</a>
+          Forgot your <a href="#">password?</a>
         </label>
       </form>
     </div>
