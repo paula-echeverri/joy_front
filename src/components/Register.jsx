@@ -52,7 +52,7 @@ const Register = () => {
         />
         <label htmlFor="confirm_password">Confirm password</label>
         <input
-          type="confirm_password"
+          type="password"
           id="confirm_password"
           name="confirm_password"
           value={confirmpassword}
