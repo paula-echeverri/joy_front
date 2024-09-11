@@ -1,43 +1,57 @@
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  .chats {
-    min-height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .chats > div {
-    margin-top:20%;
-    display: flex; 
-    flex-basis: calc(50% - 40px);  
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  .chats > div > div {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.chats {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.chats > div {
+  margin-right: 20px;
+  display: flex;
+  flex-basis: calc(50% - 50px);
+  /* flex-basis: content; */
+  justify-content: center;
+  flex-direction: column;
+  width: 8%;
+  height: 130px;
+  border-style: outset;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.chats > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(98, 57, 236, 0.15) 30%,
+    rgba(98, 57, 236, 0.05) 70%
+  );
+  align-items: flex-start;
+  width: 100%;
+  /* padding: 24px 4% 64px 8%; */
+}
 
+.box {
+  margin: 20px;
+}
+.box1 {
+  background-color: lightblue;
+}
+.box2 {
+  background-color: lightblue;
+}
+.box3 {
+  background-color: lightblue;
+}
+.box4 {
+  background-color: lightblue;
+}
 
-    background-image: linear-gradient(-45deg, rgba(98, 57, 236, .15) 30%, rgba(98, 57, 236, .05) 70%);
-   
-    align-items: flex-start;
-    width: 100%;
-    /* padding: 24px 4% 64px 8%; */
-    
-  }
-  
-  .box { margin: 20px; }
-  .box1 { background-color: lightblue; }
-  .box2 { background-color: lightblue; }
-  .box3 { background-color: lightblue; }
-  .box4 { background-color: lightblue; }
-  
-
-  .feature-info{
-
-    color: white;
-  }
+.feature-info {
+  color: white;
+}
